@@ -1,0 +1,14 @@
+ <div class="motack"></div>
+ <div class="login">
+     <a href="#/login/">Log In</a>
+ </div>
+
+ <div class="loginform" ng-controller="DataCtrl">
+     <label for="email" class="logintext">Email Address:</label>
+     <p class="alerttext" ng-hide="emailCheck">It's not a valid email</p>
+     <input id="email" placeholder="name@pitt.edu" type="email" ng-model="emailinput"/>
+     <label for="password" class="longintext">Password:</label>
+     <input type="text" id="password" placeholder="Password" maxlength="18"/>
+     <input type="submit" value="Sign Up" ng-click=""/>
+ </div>
+
