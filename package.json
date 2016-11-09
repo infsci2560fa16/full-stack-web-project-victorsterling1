@@ -1,6 +1,8 @@
 {
   "name": "full-stack-web",
   "version": "1.0.0",
+  "license": "MIT",
+  "private": true,
   "dependencies": {
     "grunt-cli": "0.1.13"
   },
