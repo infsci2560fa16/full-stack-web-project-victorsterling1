@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>sampleperson2</title>
+    <link rel="stylesheet" href="../bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../stylesheets/sampleperson.css">
+    <script src="../JS/jquery/jquery.js"></script>
+    <script src="../bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+</head>
+<body>
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="home.html">Cupid</a>
+        </div>
+
+        <ul class="nav navbar-nav navbar-right">
+            <li><a href="#"><span class="glyphicon glyphicon glyphicon-user"></span> Account</a></li>
+        </ul>
+    </div>
+</nav>
+<div class="motack"></div>
+<div id="mainbody">
+    <div id="picture"><img src="../image/sample2.jpg" alt=""></div>
+    <div id="info">
+        <p>Yueting Lang</p>
+        <div class="content"><span>female</span><span>25</span><span>jogging</span></div>
+    </div>
+    <div id="note">
+        <p>"Looking for a long-term relationship with a brave and responsible man."</p>
+    </div>
+    <div id="btn">
+        <input type="button" id="flower" value="Flowers(1456)">
+    </div>
+</div>
+<script>
+    $("#flower").one("click",function(e){
+        $(this).val("Flowers(1457)");
+    })
+</script>
+</body>
+</html>

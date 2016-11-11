@@ -2,16 +2,6 @@
   "name": "Getting Started with Java on Heroku",
   "description": "A barebones Java app, which can easily be deployed to Heroku.",
   "image": "heroku/java",
-  "addons": [ "heroku-postgresql" ],
-  "dependencies": {
-    "angular": "1.4.X",
-    "angular-route": "1.4.X",
-    "angular-loader": "1.4.X",
-    "angular-mocks": "1.4.X",
-    "angular-resource": "1.4.X",
-    "angular-moment": "1.0.0-beta.3",
-    "moment": ">=2.8.0 <2.12.0",
-    "jquery": "2.1.4",
-    "bootstrap": "3.3.6"
-  }
+  "addons": [ "heroku-postgresql" ]
 }
+

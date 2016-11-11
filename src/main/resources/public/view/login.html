@@ -2,25 +2,21 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Cupid</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="stylesheets/index.css">
-    <script src="JS/jquery/jquery.js"></script>
-    <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
-
-
-
+    <title>Log in</title>
+    <link rel="stylesheet" href="../bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../stylesheets/index.css">
+    <script src="../JS/jquery/jquery.js"></script>
+    <script src="../bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
 </head>
 <body>
 <nav class="navbar navbar-inverse">
     <div class="container-fluid">
         <div class="navbar-header">
-            <a class="navbar-brand" href="#">Cupid</a>
+            <a class="navbar-brand" href="../index.html">Cupid</a>
         </div>
 
         <ul class="nav navbar-nav navbar-right">
-            <li><a href="view/login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+            <li><a href="../index.html"><span class="glyphicon glyphicon-log-in"></span> Sign Up</a></li>
         </ul>
     </div>
 </nav>
@@ -32,20 +28,21 @@
 </div>
 <div class="loginform" >
     <label for="email" class="logintext">Email Address:</label>
-    <p class="alerttext">It's not a valid email</p>
+    <p class="alerttext"  >It's not a valid email</p>
     <input id="email" placeholder="name@pitt.edu" type="email" />
     <label for="password" class="longintext">Password:</label>
+    <p class="alerttext" >The password doesn't match the account</p>
     <input type="text" id="password" placeholder="Password" maxlength="18"/>
-    <input type="submit" value="Sign Up" onclick="checksubmit()"/>
+    <a href="#" class="forgetpass">Forget password?</a>
+    <input type="submit" value="Log In" onclick="checksubmit()"/>
 </div>
 <script>
+    $(".alerttext").hide();
     var checksubmit = function () {
         //checking all the stuff
         //interaction with server
-        location.href='view/signup.html';
-    };
-    $(".alerttext").hide();
+        location.href='home.html';
+    }
 </script>
-
 </body>
 </html>
