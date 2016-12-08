@@ -1,1 +1,1 @@
-web:    java -cp target/classes/com/cupid:target/dependency/* Application
+web:    java -cp target/classes:target/dependency/* com.cupid.Application
