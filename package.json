@@ -1,6 +1,8 @@
 {
   "name": "full-stack-web",
   "version": "1.0.0",
+  "repository": "https://github.com/infsci2560fa16/full-stack-web-project-victorsterling1",
+  "license": "MIT",
   "dependencies": {
     "grunt-cli": "0.1.13"
   },
@@ -13,6 +15,12 @@
     "grunt-contrib-uglify": "~0.5.0",
     "grunt-contrib-watch": "^0.6.1",
     "grunt-w3c-html-validation": "^0.1.7"
-  }
+  },
+  "scripts": {
+
+
+    "start": "node src/main/resources/public/JS/App.js"
+
+}
 }
 

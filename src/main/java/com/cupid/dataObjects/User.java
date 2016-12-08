@@ -1,53 +1,80 @@
 package com.cupid.dataObjects;
 
+import org.springframework.data.annotation.Id;
+
+import javax.xml.bind.annotation.XmlRootElement;
+
 /**
  * Created by victorzhao on 11/4/16.
  */
+@XmlRootElement(name = "User")
 public class User {
+    @Id
     private long uid;
     private String firstName;
     private String lastName;
-    private int age;
+    private int byear;
+    private int bmon;
+    private int bday;
+
     private String email;
     private String password;
     private boolean smoke;
     private String note;
     private int flower;
-    private long pid;
-
-    public User(String email, String password) {
-        this.email = email;
-        this.password = password;
-    }
-
-    public User(String firstName, String lastName, int age, String email, String password, boolean smoke, String note, int flower) {
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.age = age;
-        this.email = email;
-        this.password = password;
-        this.smoke = smoke;
-        this.note = note;
-        this.flower = flower;
-    }
+    private String photo;
+    private boolean gender;
+    private int relationship;
 
     public User() {
     }
 
-    public long getPid() {
-        return pid;
+    public User(long uid, String photo, String note) {
+        this.uid = uid;
+        this.photo = photo;
+        this.note = note;
     }
 
-    public void setPid(long pid) {
-        this.pid = pid;
-    }
-
-    public int getFlower() {
-        return flower;
-    }
-
-    public void setFlower(int flower) {
+    public User(long uid, int relationship, boolean gender, String photo, int flower, String note, boolean smoke,
+                String password, String email, int bday, int bmon, int byear, String lastName, String firstName) {
+        this.uid = uid;
+        this.relationship = relationship;
+        this.gender = gender;
+        this.photo = photo;
         this.flower = flower;
+        this.note = note;
+        this.smoke = smoke;
+        this.password = password;
+        this.email = email;
+        this.bday = bday;
+        this.bmon = bmon;
+        this.byear = byear;
+        this.lastName = lastName;
+        this.firstName = firstName;
+    }
+
+    public int getRelationship() {
+        return relationship;
+    }
+
+    public void setRelationship(int relationship) {
+        this.relationship = relationship;
+    }
+
+    public boolean isGender() {
+        return gender;
+    }
+
+    public void setGender(boolean gender) {
+        this.gender = gender;
+    }
+
+    public String getPhoto() {
+        return photo;
+    }
+
+    public void setPhoto(String photo) {
+        this.photo = photo;
     }
 
     public String getNote() {
@@ -56,6 +83,14 @@ public class User {
 
     public void setNote(String note) {
         this.note = note;
+    }
+
+    public int getFlower() {
+        return flower;
+    }
+
+    public void setFlower(int flower) {
+        this.flower = flower;
     }
 
     public boolean isSmoke() {
@@ -82,12 +117,28 @@ public class User {
         this.email = email;
     }
 
-    public int getAge() {
-        return age;
+    public int getBday() {
+        return bday;
     }
 
-    public void setAge(int age) {
-        this.age = age;
+    public void setBday(int bday) {
+        this.bday = bday;
+    }
+
+    public int getBmon() {
+        return bmon;
+    }
+
+    public void setBmon(int bmon) {
+        this.bmon = bmon;
+    }
+
+    public int getByear() {
+        return byear;
+    }
+
+    public void setByear(int byear) {
+        this.byear = byear;
     }
 
     public String getLastName() {

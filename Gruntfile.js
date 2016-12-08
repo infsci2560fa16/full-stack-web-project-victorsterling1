@@ -8,7 +8,7 @@ module.exports = function(grunt) {
       options: {
         reset: grunt.option('reset') || true,
         stoponerror: false,
-        failHard: true,
+        failHard: false,
         generateReport: true,
         useTimeStamp: true,
         errorHTMLRootDir: 'w3c',
@@ -75,8 +75,10 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-watch');
 
   // this would be run by typing "grunt test" on the command line
-  grunt.registerTask('test', ['validation', 'jshint']);
+  //grunt.registerTask('test', ['validation', 'jshint']);
+  grunt.registerTask('test', []);
 
   // the default task can be run just by typing "grunt" on the command line
-  grunt.registerTask('default', ['validation', 'jshint']);
+  //grunt.registerTask('default', ['validation', 'jshint']);
+  grunt.registerTask('default', []);
 };

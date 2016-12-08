@@ -15,14 +15,19 @@ public class UserMapper1 implements RowMapper<User> {
         User user = new User();
         user.setUid(rs.getLong("uid"));
         user.setFirstName(rs.getString("firstName"));
-        user.setLastName((rs.getString("lastName")));
-        user.setAge(rs.getInt("age"));
+        user.setLastName(rs.getString("lastName"));
+        user.setByear(rs.getInt("byear"));
+        user.setBmon(rs.getInt("bmon"));
+        user.setBday(rs.getInt("bday"));
         user.setEmail(rs.getString("email"));
         user.setPassword(rs.getString("password"));
         user.setSmoke(rs.getBoolean("smoke"));
         user.setNote(rs.getString("note"));
         user.setFlower(rs.getInt("flower"));
-        user.setPid(rs.getLong("pid"));
+        user.setPhoto(rs.getString("photo"));
+        user.setGender(rs.getBoolean("gender"));
+        user.setRelationship(rs.getInt("relationship"));
+
         return user;
 
     }
