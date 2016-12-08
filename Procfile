@@ -1,1 +1,1 @@
-web:    java -cp target/classes:target/dependency/* com.cupid.Application -Dserver.port=$PORT
+web:    java -cp -Dserver.port=$PORT target/classes:target/dependency/* com.cupid.Application
