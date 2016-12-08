@@ -1,1 +1,1 @@
-web:    java -cp target/classes:com/cupid/* Application
+web:    java -cp target/classes:target/com/cupid/* Application
